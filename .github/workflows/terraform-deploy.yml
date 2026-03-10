@@ -34,6 +34,7 @@ jobs:
           framework: terraform
           output_format: sarif
           output_file_path: checkov-results.sarif
+          external_checks_dirs: check/custom_checks
         # NO continue-on-error here — job must fail if Checkov finds issues
 
       - name: Upload Checkov results to GitHub Security
