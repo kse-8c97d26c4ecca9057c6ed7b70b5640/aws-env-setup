@@ -105,6 +105,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "${local.prefix}-web"
-    Environment = "test"
+    Environment = "prod"
   }
 }
